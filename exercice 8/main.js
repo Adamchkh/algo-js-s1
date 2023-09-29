@@ -27,26 +27,26 @@ class Pokemon {
   }
   
   // Création de deux instances de Pokémon
-  const pikachu = new Pokemon('Pikachu', 25, 10, 100, 80);
+  const leviator = new Pokemon('Leviator', 25, 10, 100, 80);
   const salameche = new Pokemon('Salameche', 30, 8, 100, 75);
   
   // Boucle de combat
-  while (pikachu.hp > 0 && salameche.hp > 0) {
-    // Pikachu attaque Salameche
-    pikachu.attackPokemon(salameche);
+  while (leviator.hp > 0 && salameche.hp > 0) {
+    // Leviator attaque Salameche
+    leviator.attackPokemon(salameche);
     console.log(`${salameche.name} a ${salameche.hp} points de vie restants.`);
   
     if (salameche.hp <= 0) {
-      console.log(`${salameche.name} est KO. ${pikachu.name} est le vainqueur !`);
+      console.log(`${salameche.name} est KO. ${leviator.name} est le vainqueur !`);
       break;
     }
   
-    // Salameche attaque Pikachu
-    salameche.attackPokemon(pikachu);
-    console.log(`${pikachu.name} a ${pikachu.hp} points de vie restants.`);
+    // Salameche attaque Leviator
+    salameche.attackPokemon(leviator);
+    console.log(`${leviator.name} a ${leviator.hp} points de vie restants.`);
   
-    if (pikachu.hp <= 0) {
-      console.log(`${pikachu.name} est KO. ${salameche.name} est le vainqueur !`);
+    if (leviator.hp <= 0) {
+      console.log(`${leviator.name} est KO. ${salameche.name} est le vainqueur !`);
       break;
     }
   }
