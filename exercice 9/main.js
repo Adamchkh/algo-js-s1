@@ -5,8 +5,8 @@ function countCharacter (value)  {
 }
 
 users.forEach (users => {
-if (countCharacter(users) < 5) { 
-console.log ( "C'est un prenom long de 5 lettres") 
+if (countCharacter(users) > 5) { 
+console.log ( "C'est un prenom long de plud de 5 lettres") 
 
 } else {
 console.log ("Ce n'est pas du tout un prénom long")
